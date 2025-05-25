@@ -1,0 +1,220 @@
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+.scoring-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.scoring-layout {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 30px;
+}
+
+.participant-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.participant-card h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.participant-meta p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.participant-description {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.participant-description h4 {
+    margin: 0 0 10px 0;
+    color: #555;
+}
+
+.existing-scores h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+.score-item {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-left: 4px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.score-item.own-score {
+    border-left-color: #007bff;
+    background: #f8f9ff;
+}
+
+.score-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.score-value {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.score-comments {
+    margin: 10px 0;
+    color: #555;
+    font-style: italic;
+}
+
+.score-date {
+    font-size: 12px;
+    color: #888;
+}
+
+.form-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.form-card h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.score-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.score-buttons input[type="radio"] {
+    display: none;
+}
+
+.score-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: bold;
+    background: white;
+}
+
+.score-btn:hover {
+    border-color: #007bff;
+    background: #f0f8ff;
+}
+
+.score-buttons input[type="radio"]:checked + .score-btn {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.last-scored {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.no-scores {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .scoring-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-card {
+        position: static;
+    }
+    
+    .score-buttons {
+        justify-content: center;
+    }
+}

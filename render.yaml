@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: judging-system
+    runtime: php
+    repo: https://github.com/wakoTheDev/Judging-system-CTF
+    branch: main
+    buildCommand: "composer install"
+    startCommand: "php -S 0.0.0.0:$PORT -t ."
+    plan: free

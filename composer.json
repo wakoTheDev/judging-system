@@ -1,0 +1,11 @@
+{
+  "name": "wako/judging-system",
+  "description": "A simple PHP-based judging system",
+  "type": "project",
+  "require": {
+    "php": "^8.1"
+  },
+  "scripts": {
+    "start": "php -S 0.0.0.0:$PORT -t ."
+  }
+}
