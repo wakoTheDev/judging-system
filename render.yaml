@@ -3,5 +3,6 @@ services:
     name: judging-system
     repo: https://github.com/wakoTheDev/judging-system
     branch: main
+    runtime: docker
     dockerfilePath: Dockerfile
     plan: free
